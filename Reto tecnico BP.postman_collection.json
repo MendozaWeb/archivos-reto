@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "c2c3f97e-b98e-4dee-b83b-7cafa3db8f03",
+		"name": "Reto tecnico BP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14326925"
+	},
+	"item": [
+		{
+			"name": "MS Client-Person",
+			"item": [
+				{
+					"name": "Person",
+					"item": [
+						{
+							"name": "/persons/create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"name\": \"Jane Doe\",\n    \"gender\": \"female\",\n    \"age\": 28,\n    \"address\": \"789 Maple St, Springfield, IL\",\n    \"phone\": \"321-654-0987\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/persons/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"persons",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/persons/list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/persons/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"persons",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/persons/list/{id}",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/persons/list/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"persons",
+										"list",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/persons/update/{id}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Robert Brown\",\n    \"gender\": \"male\",\n    \"age\": 29,\n    \"address\": \"789 Pine St, Springfield, IL\",\n    \"phone\": \"345-678-9012\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/persons/update/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"persons",
+										"update",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/persons/delete/{id}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/persons/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"persons",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "/clients/create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clients/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clients",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/clients/list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clients/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clients",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/clients/list/{id}",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clients/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clients",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/clients/update/{Id}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"clientId\": \"client122\",\n        \"status\": true\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clients/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clients",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/clients/delete/{id}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/clients/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clients",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MS Account-Movements",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "/accounts/create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"accountNumber\": \"1234567890\",\n    \"accountType\": \"Checking\",\n    \"initialBalance\": 1000.0,\n    \"status\": true\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/accounts/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"accounts",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/accounts/update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/accounts/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"accounts",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/accounts/delete/{id}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/accounts/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"accounts",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/accounts/all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/accounts/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"accounts",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Movements",
+					"item": [
+						{
+							"name": "/movements/create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"date\": \"2024-07-15T00:00:00.000+00:00\",\n    \"movementType\": \"Deposit\",\n    \"value\": 500.0,\n    \"balance\": 1500.0,\n    \"accountId\": 1\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movements/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movements",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/movements/all",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movements/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movements",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/movements/delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movements/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movements",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/movements/update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"date\": \"2024-07-15T00:00:00.000+00:00\",\n    \"movementType\": \"Withdrawal\",\n    \"value\": 300.0,\n    \"balance\": 1200.0,\n    \"accountId\": 2\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movements/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movements",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
